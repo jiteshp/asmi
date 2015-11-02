@@ -20,7 +20,7 @@ if( have_posts() ) {
 		}
 	}
 	
-	the_posts_navigation( array(
+	the_posts_pagination( array(
 		'prev_text'	=> '<i class="fa fa-chevron-left"></i>' .
 			sprintf( '<span class="screen-reader-text">%s</span>', 
 				__( 'Previous Page', 'asmi' ) ),

@@ -16,7 +16,7 @@
 		<?php
 		if( is_home() && current_user_can( 'publish-posts' ) ) { ?>
 			<p>
-				<?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started 	here</a>.', 'asmi' ), esc_url( admin_url( 'post-new.php' ) ) ) ); ?>
+				<?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started 	here</a>.', 'asmi' ), esc_url( admin_url( 'post-new.php' ) ) ); ?>
 			</p> <?php
 		}
 		else { ?>

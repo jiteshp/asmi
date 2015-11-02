@@ -11,9 +11,13 @@
 if( '' != get_the_title() || '' != get_the_content() ) { ?>
 	<article <?php post_class(); ?>>
 		<header class="entry-header">
-			<div class="entry-time"><?php the_time( 'F j, Y' ); ?></div>
-			
 			<?php
+			if( ! is_search() ) { ?>
+			<div class="entry-time">
+				<?php the_time( 'F j, Y' ); ?>
+			</div> <?php
+			}
+			 
 			if( '' != get_the_title() ) { ?>
 			<h1 class="entry-title">
 				<a href="<?php the_permalink(); ?>"

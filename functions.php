@@ -385,7 +385,7 @@ if( ! function_exists( 'asmi_logo' ) ) {
  */
 function asmi_get_fonts_uri() {
 	$fonts = apply_filters( 'asmi_fonts', array(
-		'Ek Mukta:200,200italic,700',
+		'Ek Mukta:300,300italic,400,700',
 		'Inconsolata',
 	) );
 	
