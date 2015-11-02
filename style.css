@@ -934,6 +934,10 @@ textarea {
   font-weight: bold;
   line-height: 90px;
 }
+#site-brand img {
+  display: block;
+  width: auto;
+}
 #header-nav .toggle {
   background-color: #1e73be;
   display: block;

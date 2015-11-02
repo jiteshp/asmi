@@ -366,11 +366,12 @@ if( ! function_exists( 'asmi_logo' ) ) {
 		
 		$site_logo = get_theme_mod( 'asmi_logo_image', false );
 		if( $site_logo ) {
-			$site_logo = wp_get_attachment_src( $site_logo );
+			$site_logo = wp_get_attachment_image_src( absint( $site_logo ) );
 			$site_logo = sprintf( '<img src="%1$s" alt="%2$s">', 
 				esc_url( $site_logo[0] ), esc_attr( $site_title ) );
 			
 			echo $site_logo;
+			return;
 		}
 		
 		echo $site_title;
