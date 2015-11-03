@@ -802,6 +802,7 @@ a {
   transition: all 0.8s;
   border-bottom: solid 1px transparent;
   color: #1e73be;
+  font-weight: 500;
   text-decoration: none;
 }
 a:hover {
