@@ -1,4 +1,5 @@
 /*!
+/*!
  *	Theme Name:			Asmi
  *	Theme URI:			https://github.com/jiteshp/asmi
  *	Version:			1.0.0
@@ -197,6 +198,18 @@ textarea {
 @media (min-width: 1080px) {
   .container {
     max-width: 1080px;
+  }
+}
+@media (min-width: 960px) {
+  .extended {
+    margin-left: -120px;
+    margin-right: -120px;
+  }
+}
+@media (min-width: 1080px) {
+  .extended {
+    margin-left: -180px;
+    margin-right: -180px;
   }
 }
 .row {
@@ -508,6 +521,9 @@ textarea {
 .block-element:last-child {
   margin-bottom: 0;
 }
+.strike {
+  text-decoration: line-through;
+}
 .text-center {
   text-align: center;
 }
@@ -675,6 +691,14 @@ h6,
     width: 33.334%;
   }
 }
+.highlight-block {
+  margin-bottom: 30px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.highlight-block:last-child {
+  margin-bottom: 0;
+}
 .media {
   margin-bottom: 30px;
 }
@@ -756,6 +780,10 @@ hr {
   border: 0;
   border-bottom: solid 1px #000000;
 }
+hr.section-spacer {
+  height: 44px;
+  margin-bottom: 45px;
+}
 body,
 input,
 select,
@@ -814,6 +842,22 @@ blockquote:before {
 code,
 pre {
   font-family: 'Inconsolata', monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 30px;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
 }
 em {
   font-style: italic;
@@ -1017,6 +1061,7 @@ textarea {
   border-bottom-color: white;
 }
 #footer-nav {
+  font-weight: bold;
   margin: 30px 0;
 }
 #footer-nav li {
@@ -1090,13 +1135,10 @@ textarea {
 .entry-content ul {
   list-style: disc;
 }
-@screen-md {
-  margin-left: 120px;
-  margin-right: 120px;
-}
-@screen-bg {
-  margin-left: 180px;
-  margin-right: 180px;
+.entry-content h3,
+.entry-content h4 {
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 .no-results {
   padding: 75px 0;
@@ -1315,4 +1357,24 @@ textarea {
 }
 .wpcf7 .wpcf7-response-output {
   text-align: center;
+}
+ul.price-plan {
+  background-color: white;
+  list-style: none;
+  margin-left: 0;
+}
+ul.price-plan li {
+  border-bottom: dotted 1px #eeeeee;
+  padding: 30px;
+}
+ul.price-plan li:first-child {
+  border-bottom-style: solid;
+}
+ul.price-plan li:last-child {
+  background-color: #1e73be;
+  border-bottom: 0;
+}
+ul.price-plan span {
+  display: block;
+  margin: 0;
 }
