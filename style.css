@@ -972,6 +972,13 @@ textarea {
   border: 0;
   color: white;
 }
+.light-on-dark-header #site-header {
+  background-color: white;
+  color: #000000;
+}
+.light-on-dark-header #site-header a {
+  color: #000000;
+}
 #site-brand {
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -985,6 +992,7 @@ textarea {
 }
 #header-nav .toggle {
   background-color: #1e73be;
+  color: white !important;
   display: block;
   font-size: 18px;
   height: 45px;
@@ -1023,6 +1031,9 @@ textarea {
     margin-left: 20px;
   }
 }
+.light-on-dark-header #header-nav .menu li {
+  border-top-color: rgba(0, 0, 0, 0.05);
+}
 #header-nav .menu a {
   border-bottom: solid 1px transparent;
   display: inline-block;
@@ -1041,9 +1052,20 @@ textarea {
   }
 }
 @media (min-width: 960px) {
+  .light-on-dark-header #header-nav .menu a:hover {
+    border-bottom-color: #000000;
+  }
+}
+@media (min-width: 960px) {
   #header-nav .current-menu-item a,
   #header-nav .current_page_item a {
     border-bottom-color: white;
+  }
+}
+@media (min-width: 960px) {
+  .light-on-dark-header #header-nav .current-menu-item a,
+  .light-on-dark-header #header-nav .current_page_item a {
+    border-bottom-color: #000000;
   }
 }
 #site-footer {

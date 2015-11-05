@@ -585,6 +585,15 @@ textarea {
 		border: 0;
 		color: white;
 	}
+	
+	.light-on-dark-header & {
+		background-color: white;
+		color: @text-color;
+		
+		a {
+			color: @text-color;
+		}
+	}
 }
 
 //
@@ -607,6 +616,7 @@ textarea {
 //	----------------------------------------------------------------------------
 #header-nav .toggle {
 	background-color: @accent-color;
+	color: white !important;
 	display: block;
 	font-size: 18px;
 	height: @base-line-height * 1.5;
@@ -642,6 +652,10 @@ textarea {
 		display: inline;
 		margin-left: @grid-gutter-width / 3;
 	}
+	
+	.light-on-dark-header & {
+		border-top-color: fadeout( @text-color, 95% );
+	}
 }
 
 #header-nav .menu a {
@@ -660,11 +674,23 @@ textarea {
 	@media( min-width: @screen-md ) {
 		border-bottom-color: white;
 	}
+	
+	.light-on-dark-header & {
+		@media( min-width: @screen-md ) {
+			border-bottom-color: @text-color;
+		}
+	}
 }
 
 #header-nav .current-menu-item a, #header-nav .current_page_item a {
 	@media( min-width: @screen-md ) {
 		border-bottom-color: white;
+	}
+	
+	.light-on-dark-header & {
+		@media( min-width: @screen-md ) {
+			border-bottom-color: @text-color;
+		}
 	}
 }
 
