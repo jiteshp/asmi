@@ -951,7 +951,6 @@ textarea {
 //	Header & footer widget styles
 //	----------------------------------------------------------------------------
 #header-widgets, #footer-widgets {
-	background-color: @block-bg-color;
 	text-align: center;
 
 	.widget {
@@ -962,6 +961,10 @@ textarea {
 		
 		.container {
 			padding: ( @base-line-height * 2.5 ) ( @grid-gutter-width / 2 );
+		}
+		
+		&:nth-child( odd ) {
+			background-color: @block-bg-color;
 		}
 		
 		&:first-child {
